@@ -20,7 +20,7 @@ public class Transpose {
         int col = arr.length;
         System.out.println("No of rows before transpose " + arr.length + " and col " + arr[0].length);
         int res[][] = new int[row][col];
-        System.out.println(arr[0][2]);
+        // System.out.println(arr[0][2]);
         System.out.println("Matrix after transpose");
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < col; j++) {
@@ -34,7 +34,7 @@ public class Transpose {
 
     public static void main(String[] args) {
         // create array
-        int[][] arr = new int[2][3];
+        int[][] arr = new int[4][4];
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter elements of array :");
         for (int row = 0; row < arr.length; row++) {
