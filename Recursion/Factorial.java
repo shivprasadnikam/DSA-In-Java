@@ -7,14 +7,15 @@ public class Factorial {
     public static int printFact(int n) {
         // Base Case
         if (n == 0) {
-            n *= 1;
-            return n;
+            return 1;
         }
 
         // Kaam
+        int prev = printFact(n - 1);
+        int val = n * prev;
 
         // Recursive call
-        return n * printFact(n - 1);
+        return val;
 
     }
 
